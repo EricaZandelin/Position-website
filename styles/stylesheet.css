@@ -1,0 +1,368 @@
+/*body {
+    height: 200vh;
+}*/
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+li, a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 10px 25px;
+    border-radius: 5px;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    color: green;
+}
+
+.btn__white {
+    background-color: white;
+    color: #173A56;
+    margin: 14px;
+}
+
+.btn__yellow {
+    background-color: #FF9900;
+    color:white;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px 10%;
+    
+}
+
+.logo {
+    cursor:pointer;
+    margin-right: auto;
+}
+
+
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links > li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links > li > a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links > li > a:hover {
+    color:darkslategray;
+}
+/*--This is where navbar ends--*/
+
+.container__main {
+   /* width: 100%;
+    height: 100vh;
+    flex-wrap: wrap;*/
+    position:relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.btn__started {
+    border-radius: 4px;
+    background-color: #FF9900;
+    color:white;
+    margin-left: 140px;
+}
+
+/*Detta kan inte stämma hur man ska göra det....*/
+.btn__middle {
+    position: absolute;
+    left: 900px;
+    background-color: #FF9900;
+    color:white;
+}
+
+
+/* lista ut hur du centrerar länk + triangel i linje med knapp*/
+.triangle-right {
+    display:inline-flex;
+    margin-left: 30px;
+    width: 0;
+	height: 0;
+	border-top: 12px solid transparent;
+	border-left: 24px solid #FF9900;
+    border-bottom: 12px solid transparent;
+    border-radius: 4px;
+   
+}
+
+.main-title {
+    max-width: 518px;
+    width: 100%;
+    margin-top: 211px;
+    margin-left: 145px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size:44px;
+    line-height: 54px;
+    letter-spacing:normal;
+    color: #2F281E;
+    
+}
+
+.info-text {
+    max-width: 458px;
+    width: 100%;
+    margin-top: 30px;
+    margin-left:145px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: normal;
+    color: #544837;
+}
+
+/*ändra alla titlar till tjockare text - här börjar box 2*/
+.second-title{
+
+    width: 100%;
+    margin-top: 211px;
+    margin-bottom:54px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size:36px;
+    line-height: 54px;
+    letter-spacing:normal;
+    color: #2F281E;
+    text-align: center;  
+}
+
+
+.container-second {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left:145px;
+    /*width: 100%;
+    height: 100%;*/
+}
+
+.container-third {
+    display: inline-flex;
+    /*justify-content: center;
+    align-items: flex-start;*/
+    margin-top: 150px;
+    margin-left: 20px
+}
+
+.container-fourth {
+    position: relative;
+    left: 100px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    align-content: space-around;
+    align-items: center;
+}
+
+
+.container-fifth {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px;
+}
+
+.item__title {
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 33px;
+    color:  #2F281E;
+    text-align: center;
+}
+
+.item__info {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #544837;
+    letter-spacing: normal;
+}
+
+.item {
+    /*background-color:gray;*/
+    /*border-radius: 15px;
+    min-width: 468px;
+    min-height: 160px;
+    margin: 20px;*/
+    display: inline-block;
+    margin: 10px;
+    /*margin-right: 46px;
+    width: 8em;*/ 
+    width: 240px;
+    height: 178px;
+}
+
+h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color:  #2F281E;
+}
+span {
+    font-family: 'Poppins', sans-serif;
+    color:  #2F281E;
+}
+
+.third-title {
+    width: 385px;
+    height: 53px;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color:  #2F281E;
+}
+/*något är fel här - kolla noga sen Erica */
+.describe-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal
+    font-style: normal;
+    font-size: 13px;
+    line-height: 26px;
+    color: #544837;
+    letter-spacing: normal;
+}
+
+.rectangle {
+    position: relative;
+    right: 80px;
+}
+
+.parent {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .redguy1 {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .redguy2 {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
+
+  .blueguy1 {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .blueguy2 {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
+
+  .yellowguy{
+    position: relative;
+    left: 250px;
+  }
+
+  .box1, .box2, .box3 {
+      margin: 10px;
+  }
+
+  /*ännu en gång..detta kan inte va rätt sätt att göra det på?*/
+.btn__footer {
+    border-radius: 4px;
+    background-color: #FF9900;
+    color: white;
+    position: relative;
+    left: 1155px;
+    bottom: 115px;
+    } 
+
+.footer-clean{
+        padding:50px 0;
+        background-color:#fff;
+        color: #544837;
+}
+      
+.footer-clean h3 {
+        margin-top:0;
+        margin-bottom:12px;
+        font-weight:normal;
+        font-size:16px;
+      }
+      
+.footer-clean ul {
+        padding:0;
+        list-style:none;
+        line-height:1.6;
+        font-size:14px;
+        margin-bottom:0;
+      }
+      
+.footer-clean ul a {
+        color:inherit;
+        text-decoration:none;
+        opacity:0.8;
+      }
+      
+.footer-clean ul a:hover {
+        opacity:1;
+      }
+      
+.container__footer {
+    display: flex;
+    justify-content: center;
+}
+
+.section__four {
+    position: relative;
+    left: 150px;
+    width: 25%;
+}
+
+.section__five {
+    width: 30%;
+}
+
+
+.inputbox {
+    position: relative;
+    left: 1000px;
+    bottom: 162px;
+    width: 325px;
+    height: 40px;
+}
+
+/*Ta reda på hur allt på sidan stannar på samma plats när du förstorar
+och minskar sidan... Flexbox-shrink/grow?*/
